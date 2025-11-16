@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6 bg-white shadow">
+    <h1 class="text-2xl font-bold">Portfolio</h1>
+    <div class="space-x-6">
+      <a href="index.html" class="hover:text-blue-600">Home</a>
+      <a href="portfolio.html" class="text-blue-600 font-semibold">Projects</a>
+      <a href="about.html" class=" hover:text-blue-600">About</a>
+      <a href="contact.html" class="hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="py-20 text-center bg-white shadow">
+    <h2 class="text-4xl font-bold mb-4">My Projects</h2>
+    <p class="max-w-xl mx-auto text-lg">Here are some of the projects I’ve worked on while studying Information Technology.</p>
+  </header>
+
+  <!-- Filter Box -->
+  <div class="bg-white shadow p-6 flex justify-center space-x-4 sticky top-0 z-20">
+      <button class="px-4 py-2 bg-blue-600 text-white rounded filter-btn" data-filter="all">All</button>
+      <button class="px-4 py-2 bg-gray-200 rounded filter-btn" data-filter="website">Websites/Application</button>
+      <button class="px-4 py-2 bg-gray-200 rounded filter-btn" data-filter="photoshop">Prototypes/Framework</button>
+  </div>
+
+  <!-- Projects Grid -->
+  <section class="py-20 px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+
+      <!-- Project Card 1 -->
+      <div class="project-card bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-category="website">
+          <img src="img/p1.png" class="w-full h-40 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-3">Barangay Management System</h3>
+          <p class="mb-4">A PHP-based system with resident registration, ID and certification generation.</p>
+          <a href="https://barangay400.com/" class="text-blue-600 hover:underline">View Website</a>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="project-card bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-category="website">
+          <img src="img/p2.png" class="w-full h-40 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-3">Work Smartly Website</h3>
+          <p class="mb-4">A Website about lists of productive tools, how to use them, and what they are, made using BootStrap, HTML, and CSS.</p>
+          <a href="https://bloorage.github.io/WorkSmartly/index.html" class="text-blue-600 hover:underline">View Website</a>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-category="website">
+          <img src="img/p3.png" class="w-full h-40 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-3">BALIKAN Application</h3>
+          <p class="mb-4">An application about disaster preparedness and response, news, maps, and survival tips.</p>
+          <!-- <a href="#" class="text-blue-600 hover:underline">View Details</a> -->
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="project-card bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-category="website">
+            <img src="img/p5.png" class="w-full h-40 object-cover rounded-lg mb-4">
+            <h3 class="text-2xl font-bold mb-3">First Personal Portfolio Website</h3>
+            <p class="mb-4">This website is designed and coded by me to showcase my skills for a Subject. it is mostly made up of HTML and CSS.</p>
+            <a href="https://kathleen-bit.github.io/perweb/" class="text-blue-600 hover:underline">View Website</a>
+      </div>
+
+      <!-- Project Card 5 -->
+      <div class="project-card bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-category="website">
+          <img src="img/p4.png" class="w-full h-40 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-3">BOOK Ordering Website</h3>
+          <p class="mb-4">A website for ordering books online, built using basic HTML, CSS, and JavaScript.</p>
+          <!-- <a href="#" class="text-blue-600 hover:underline">View Website</a> -->
+      </div>
+
+      <!-- Project Card 6 -->
+      <!-- <div class="project-card bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-category="website">
+          <h3 class="text-2xl font-bold mb-3">Simple CRUD System</h3>
+          <p class="mb-4">A basic CRUD web app for learning database operations and PHP workflows.</p>
+          <a href="#" class="text-blue-600 hover:underline">View Details</a>
+      </div> -->
+
+      <!-- Project Card 3 -->
+      <div class="project-card bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-category="photoshop">
+          <img src="img/p10.png" class="w-full h-40 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-3">Initial WorkSmartly Design</h3>
+          <p class="mb-4">This is an Assignment for a subject, and each one of us need to present a design, I used FIGMA. </p>
+          <!-- <a href="#" class="text-blue-600 hover:underline">View Details</a> -->
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-category="photoshop">
+          <img src="img/p6.png" class="w-full h-40 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-3">Modern Craiglist Website Redesign</h3>
+          <p class="mb-4">This is an Assignment for a subject, and we were tasked to redesign an existing website and we chose Craiglist, we used FIGMA. </p>
+          <!-- <a href="#" class="text-blue-600 hover:underline">View Details</a> -->
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-category="photoshop">
+          <img src="img/p7.png" class="w-full h-40 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-3">Building Bridges Website design</h3>
+          <p class="mb-4">This is an Assignment for a subject, and we were tasked to design a website for a child, we used FIGMA. </p>
+          <!-- <a href="#" class="text-blue-600 hover:underline">View Details</a> -->
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-category="photoshop">
+          <img src="img/p8.png" class="w-full h-40 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-3">Arch Angels Application design</h3>
+          <p class="mb-4">We were tasked to find a business and make an application for them, We used FIGMA.</p>
+          <!-- <a href="#" class="text-blue-600 hover:underline">View Details</a> -->
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="project-card bg-white rounded-xl shadow p-6 hover:shadow-lg transition" data-category="photoshop">
+          <img src="img/p9.png" class="w-full h-40 object-cover rounded-lg mb-4">
+          <h3 class="text-2xl font-bold mb-3">Krafty Cuisine Design for Mobile and Website</h3>
+          <p class="mb-4">I was tasked to make a website about anything and I chose foods, I used CANVA. </p>
+          <!-- <a href="#" class="text-blue-600 hover:underline">View Details</a> -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-gray-200 mt-10">
+    <p>&copy;2025, All rights reserved.</p>
+  </footer>
+
+  <!-- FILTER SCRIPT -->
+  <script>
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projects = document.querySelectorAll(".project-card");
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const filter = btn.getAttribute("data-filter");
+
+        // Change active button
+        filterButtons.forEach(b => {
+          b.classList.remove("bg-blue-600", "text-white");
+          b.classList.add("bg-gray-200");
+        });
+        btn.classList.remove("bg-gray-200");
+        btn.classList.add("bg-blue-600", "text-white");
+
+        // Filter projects
+        projects.forEach(project => {
+          const category = project.getAttribute("data-category");
+
+          if (filter === "all" || category === filter) {
+            project.style.display = "block";
+          } else {
+            project.style.display = "none";
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

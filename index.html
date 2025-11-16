@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6 bg-white shadow">
+    <h1 class="text-2xl font-bold">Portfolio</h1>
+    <div class="space-x-6">
+      <a href="index.html" class="text-blue-600 font-semibold">Home</a>
+      <a href="portfolio.html" class="hover:text-blue-600">Projects</a>
+      <a href="about.html" class="hover:text-blue-600">About</a>
+      <a href="contact.html" class="hover:text-blue-600">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section with Image Slideshow -->
+<section class="h-screen relative flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+  <div id="slideshow" class="absolute top-0 left-0 w-full h-full">
+    <img src="img/p2.png" class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-70">
+    <img src="img/p5.png" class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0">
+    <img src="img/p3.png" class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0">
+  </div>
+
+  <div class="relative z-10 text-white">
+    <h2 class="text-5xl font-bold mb-4">Hello! I am Kathleen</h2>
+    <p class="text-lg mb-6 max-w-xl">Welcome to my portfolio website! I created this to showcase my projects, skills, and journey as an aspiring IT professional.</p>
+    <a href="portfolio.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">View My Projects</a>
+  </div>
+
+  <div class="absolute inset-0 bg-black opacity-30"></div> <!-- overlay -->
+</section>
+
+<script>
+  const slides = document.querySelectorAll("#slideshow img");
+  let current = 0;
+
+  setInterval(() => {
+    slides[current].classList.remove("opacity-100");
+    slides[current].classList.add("opacity-0");
+    current = (current + 1) % slides.length;
+    slides[current].classList.remove("opacity-0");
+    slides[current].classList.add("opacity-100");
+  }, 5000); // change every 5 seconds
+</script>
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-gray-200 mt-10">
+    <p>&copy;2025, All rights reserved.</p>
+  </footer>
+</body>
+</html>
